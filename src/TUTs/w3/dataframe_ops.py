@@ -31,7 +31,7 @@ print(df2);
 print("=======================")
 
 
-## 将两个dataframe数据进行"内连接" & (和SQL中的内连接 & 外连接一个道理)
+## 将两个dataframe数据进行"内连接" & (和SQL中的内连接 & 外连接一个道理) Data Integration
 """
 内连接:
 注: 以下三种方法均会返回一个新的 dataframe对象
