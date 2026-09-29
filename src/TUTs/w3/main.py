@@ -116,6 +116,8 @@ print("=============================");
 - 标准化(z-score standardization): (data - data.mean() / data.std())
     Z Score标准化: 看每个值离'平均水平'有多远, 用'标准差'来做单位
     用当前数据(data) - 本列的'均值', 随后除以本列的'方差', 即可得出'当前数据' 和 本列的均值 有几个'标准差'
+    标准差 = [(值1-均值)^(2) + (值2-均值)^(2) + (值3-均值)^(2) + ...] / 所有值的'个数'
+
 - 离散化(将数据分为不同'标签类型' binning, 假设标签类别为5个): 
 quct = pd.qcut(data, 5)
 print(quct = qcut.value_counts().sort_index())
