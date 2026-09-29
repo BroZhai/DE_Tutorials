@@ -1,5 +1,5 @@
 w1 (skip)
 w2 (skip, if have time then do)
 w3 (ok)
-w4
-w5
+w4 (Barely Skipped, Understand the defination of the plots is enough, Practice part can be checked)
+w5 (Barely Skipped, Practice part can be checked)
