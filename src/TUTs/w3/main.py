@@ -108,9 +108,15 @@ print("=============================");
 
 (数值 内容变换, 直接直接展示几个常用的'数学公式', 直接参考就行了)
 这里以'data'来指代 "数据对象['指定字段名']"
-min-max归一化(normalization): (data - data.min()) / (data.max() - data.min())
-标准化(z-score): (data - data.mean() / data.std())
-离散化(将数据分为不同'标签类型', 假设标签类别为5个): 
+- min-max归一化(normalization): (data - data.min()) / (data.max() - data.min())
+    归一化: 将数据范围"压缩成" 0-1 的表示区间
+    用数据'每一列'的最大值 - 最小值: data.max() - data.mix() = 参考范围,
+    随后是'当前数据' (data) - 最小值, 再除以'参考范围' 即可得出当前值的'归一化值'
+
+- 标准化(z-score standardization): (data - data.mean() / data.std())
+    Z Score标准化: 看每个值离'平均水平'有多远, 用'标准差'来做单位
+    用当前数据(data) - 本列的'均值', 随后除以本列的'方差', 即可得出'当前数据' 和 本列的均值 有几个'标准差'
+- 离散化(将数据分为不同'标签类型' binning, 假设标签类别为5个): 
 quct = pd.qcut(data, 5)
 print(quct = qcut.value_counts().sort_index())
 """
