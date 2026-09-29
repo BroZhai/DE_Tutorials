@@ -49,8 +49,8 @@ pd.merge(df对象a, df对象b)
 外连接:
 分三种情况, 两边全保留, 仅保留左边 和 仅保留右边
 pd.merge(df对象a, df对象b, on="共有字段名", how="outer"); # 两边全部保留 (通常数据更多的那边可能会'吃亏'[缺数据])
-pd.merge(df对象a, df对象b, on="共有字段名", how="left"); # 保留'df对象a' (留全左边的所有数据, 右边可能有NaN)
-pd.merge(df对象a, df对象b, on="共有字段名", how="right"); # 保留'df对象b' (留全右边的所有数据, 左边可能用NaN)
+pd.merge(df对象a, df对象b, on="共有字段名", how="left"); # 保留'df对象a' (留全左边的所有数据, 右边找不到'共同key映射'的为NaN)
+pd.merge(df对象a, df对象b, on="共有字段名", how="right"); # 保留'df对象b' (留全右边的所有数据, 左边找不到'共同key映射'的为NaN)
 """
 # 执行'内连接'
 print(pd.merge(df1, df2)); # 以两边共有的'column_1'做内连接
@@ -59,6 +59,6 @@ print()
 # 执行'外连接'
 print(pd.merge(df1, df2, on="column_1", how="outer"));
 print()
-print(pd.merge(df1, df2, on="column_1", how="left"));
+print(pd.merge(df1, df2, on="column_1", how="left")); # 留全 1 2 3 4 5 (从上往下按df1的顺序排列), 'b b a c...'
 print();
-print(pd.merge(df1, df2, on="column_1", how="right"));
+print(pd.merge(df1, df2, on="column_1", how="right")); # 留全A B D (从上往下按df2的顺序排列, 'A B D')
