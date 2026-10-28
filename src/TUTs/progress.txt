@@ -3,3 +3,6 @@ w2 (skip, if have time then do)
 w3 (ok)
 w4 (Barely Skipped, Understand the defination of the plots is enough, Practice part can be checked)
 w5 (Barely Skipped, Practice part can be checked)
+w6 教了怎么用AI来写SQL (Skip)
+w7 & w8 都是pdf题目, 自己理解了w7; w8的内容可以拿来当习题
+w9 (等待研究...)
