@@ -9,4 +9,5 @@
 
 w6的东西是教怎么用AI写SQL, 自己简单看看就行, w7-8都是pdf习题, 自己研究, 补充了本周w9的内容, 准备让Agent进行分析
 简单补充了个Agent的例子, 准备对照着搞搞对应的exercise
+简单的过了一下exercise中的Discussion部分, 其他代码的部分有空看看'Agent示例'就好了, 开看SQL
 2026.10.28
